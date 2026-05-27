@@ -7,9 +7,5 @@ sap.ui.define([
 
     return Controller.extend("sap.training.exc.controller.App", {
 
-      onSayHello: function () {
-        MessageBox.information("Hello World");
-      }
-
     });
   });
