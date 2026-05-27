@@ -2,8 +2,6 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
 
-  <!-- <Text text="Hello World from xml"/> -->
-
   <Button text="Say Hello" press=".onSayHello"/>
 
 </mvc:View>

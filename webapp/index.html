@@ -10,14 +10,9 @@
         data-sap-ui-theme="sap_fiori_3"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
-        data-sap-ui-onInit="module:sap/training/exc/index"
-        data-sap-ui-resourceroots='{"sap.training.exc": "./"}'
         data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-resourceroots='{"sap.training.exc": "./"}'
     ></script>
-    <!-- <script>
-        var oText= new sap.m.Text({text: "Hello World"});
-        oText.placeAt("content");
-    </script> -->
     <style>
         html, body, body > div, #container, #container-uiarea {
             height: 100%;
@@ -26,6 +21,11 @@
     <title>Exercise Application</title>
 </head>
 <body class="sapUiBody" id="content">
-    <!-- <div>Hello World from body</div> -->
+    <div
+        data-sap-ui-component
+        data-id="container"
+        data-name="sap.training.exc"
+        data-settings='{"id" : "sap.training.exc"}'
+    ></div>
 </body>
 </html>
