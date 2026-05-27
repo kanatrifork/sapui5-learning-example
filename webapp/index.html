@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-onInit="module:sap/training/exc/index"
+        data-sap-ui-resourceroots='{"sap.training.exc": "./"}'
+        data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
+    ></script>
+    <!-- <script>
+        var oText= new sap.m.Text({text: "Hello World"});
+        oText.placeAt("content");
+    </script> -->
     <style>
         html, body, body > div, #container, #container-uiarea {
             height: 100%;
         }
     </style>
+    <title>Exercise Application</title>
 </head>
-<body>
-    
+<body class="sapUiBody" id="content">
+    <!-- <div>Hello World from body</div> -->
 </body>
 </html>
