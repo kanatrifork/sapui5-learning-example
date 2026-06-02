@@ -9,7 +9,7 @@ sap.ui.define(
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    */
-  function (Controller, syncStyleClass, JSONModel, Filter, FilterOperations) {
+  function (Controller, syncStyleClass, JSONModel, Filter, FilterOperator) {
     "use strict";
 
     return Controller.extend("sap.training.exc.controller.Overview", {
