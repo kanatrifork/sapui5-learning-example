@@ -2,7 +2,7 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:f="sap.ui.layout.form"
-  xmlns:core="sap.ui.core">
+  xmlns:core="sap.ui.core" core:require="{formatter: 'sap/training/exc/model/formatter'}">
   <Page title="Flight Customers">
     <content>
       <Panel headerText="New Customer" expandable="true" expanded="true" class="sapUiResponsiveMargin sapUiHideOnPhone" width="auto">
@@ -130,8 +130,7 @@
             <cells>
               <ObjectIdentifier title="{AirlineID}"/>
               <ObjectIdentifier title="{ConnectionNumber}"/>
-              <ObjectIdentifier
-                title="{
+              <ObjectIdentifier title="{
                   path: 'FlightDate',
                   type: 'sap.ui.model.type.Date',
                   formatOptions: {
@@ -139,18 +138,17 @@
                     style: 'medium'
                   }
                 }"/>
-              <Text text="{Class}"/>
+              <!-- <Text text="{Class}"/> -->
+              <Text text="{path: 'Class', formatter: 'formatter.classText'}"/>
               <!-- <ObjectNumber number="{ForeignCurrencyPayment}" unit="{ForeignCurrency}"/> -->
-              <ObjectNumber
-                number="{
+              <ObjectNumber number="{
                   parts: [
                     {path: 'ForeignCurrencyPayment'},
                     {path: 'ForeignCurrency'}
                   ],
                   type: 'sap.ui.model.type.Currency',
                   formatOptions: {showMeasure: false}
-                }"
-                unit="{ForeignCurrency}"/>
+                }" unit="{ForeignCurrency}"/>
               <Text text="{IsCancelled}"/>
             </cells>
           </ColumnListItem>
